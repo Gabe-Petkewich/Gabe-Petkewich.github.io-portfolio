@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Gabe Petkewich</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="resume.css">
+
+</head>
+<body>
+    <!-- Banner -->
+    <div class="banner">
+        <img src="/Pictures/Assets /Mist.jpeg">
+        <div class="content">
+            <h2>Gabriel Petkewich</h2>
+            <p>Full Stack Software Developer</p>
+        </div>
+    </div>
+    <!-- Projects -->
+    <section class="portfolio">
+        <div class="container">
+            <div class="heading">
+                <h2>Portfolio</h2>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <!-- <img src="/Pictures/Projects/fridge/thumbnail.png"></div> !-->
+                    <div class="card-header">
+                        <h1>fridge</h1>
+                    </div>
+                    <div class="card-body">
+                        <p>A flutter project that was designed with HCI principles in mind to provide a platform allowing 
+                            users to keep track of items in their fridge using the Spoonacular API.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <!-- <img src="/Pictures/Projects/Theseus/theseus.png"></div> !-->
+                    <div class="card-header">
+                        <h1>Theseus</h1>
+                    </div>
+                    <div class="card-body">
+                        <p>The first game I ever made, and was also project lead for. Designed in Unity,
+                            this project took a wide balance of managing, designing, and coding.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About -->
+    <section class="about">
+        <div class="contentBx">
+            <div class="about-heading">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-text">
+                <p>My name is Gabriel Petkewich and I am a Full Stack Software
+                Developer from Statesboro, Georgia. At Southern I've been an active member of 
+                the Aurora Game Development Club and the Association for Computing Machinery (ACM).
+                In December 2020 I will graduate from Georgia Southern University with a Bachelor's Degree in Computer Science.<br><br>
+                During my time at Georgia Southern, I've worked for almost 3 years at Morris Technology
+                as a Junior Solutions Developer. Here I've added many skills and tools to my personal web development
+                kit: Django, AWS, PSQL, and more! <br><br>
+                Outside of software development I'm a drummer and live music enthusiast. I love cats, my favorite video game is
+                Rocket League, and some of my favorite bands include Polyphia, Hippo Campus, and Weezer.
+                </p>
+            </div>
+        </div>
+        <div class="imgBx"></div>
+    </section>
+    <!-- Resume -->
+    <!-- Contact -->
+    <section class="contact">
+        <div class="heading">
+            <h2>Contact Me</h2>
+        </div>
+        <div class="container">
+            <form action="action_page.php">
+          
+              <label for="fname">Full Name</label>
+              <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+          
+              <label for="emailaddress">Email Address</label>
+              <input type="text" id="emailaddress" name="emailaddress" placeholder="Email Address">
+          
+              <label for="response">Subject</label>
+              <textarea id="response" name="response" placeholder="Write your message here." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+        </div> 
+    </section>
+</body>
+</html>

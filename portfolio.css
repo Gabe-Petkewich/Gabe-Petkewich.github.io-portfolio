@@ -1,0 +1,95 @@
+@import url('https://fonts.google.apis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.portfolio {
+    background: #263071;
+    padding: 100px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.portfolio .container {
+    width: 90%;
+    margin: 50px auto;
+}
+
+.portfolio .container .heading {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.portfolio .container .row {
+    display: flex;
+    justify-content: row;
+    align-items: space-around;
+    flex-wrap: wrap;
+}
+
+.row .card {
+    width: 20%;
+    background: white;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card img {
+    max-height: 400px;
+    width: 100%;
+}
+
+.card .card-header {
+    text-align: center;
+    padding: 50px 10px;
+    background: linear-gradient(to right, #cb3f9d, #72326b);
+    color: #fff;
+}
+
+.card .card-body {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.card .card-btn {
+    display: block;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to right, #cb3f9d, #72326b);
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 10px 5px;
+}
+
+.card :hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 1000px) {
+    .card {
+      width: 40%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .container {
+        width: 100%;
+    }
+    .heading {
+        padding: 20px;
+        font-size: 20px;
+    }
+    .card {
+        width: 80%;
+    }
+}
