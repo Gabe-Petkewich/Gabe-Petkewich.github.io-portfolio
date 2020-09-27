@@ -6,7 +6,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
 .banner {
     position: relative;
     width: 100%;
@@ -16,7 +15,6 @@
     justify-content: center;
     align-items: center;
 }
-
 .banner img {
     position: absolute;
     top: 0;
@@ -26,19 +24,48 @@
     object-fit: cover;
     opacity: 0.25;
 }
-
 .banner .content {
     position: relative;
     max-width: 750px;
     text-align: center;
 }
-
 .banner .content h2 {
     color: #fff;
     font-size: 60px;
 }
-
 .banner .content p {
     color: #fff;
     font-size:26px;
+}
+@media (max-width: 991px) {
+    .banner {
+        padding: 50px;
+    }
+    .banner .content h2 {
+        font-size: 36px;
+    }
+    .banner .content p {
+        font-size: 16px;
+    }
+    .about {
+        flex-direction: column;
+    }
+    .about .contentBx,
+    .about .imgBx {
+        width: 100%;
+        padding: 50px;
+        min-height: 400px;
+        text-align: center;
+    }
+    .contact {
+        padding: 50px;
+    }
+    .footer {
+        padding: 20px 50px;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .footer ul {
+        margin-bottom: 20px;
+    }
 }

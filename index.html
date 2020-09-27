@@ -1,34 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">    
     <meta charset="UTF-8">
     <title>Gabe Petkewich</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel ="stylesheet">
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="banner.css">
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="portfolio.css">
     <link rel="stylesheet" href="resume.css">
-
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 <body>
+    <!-- Nav Bar -->
+    <nav id='navbar'>
+        <div class="logo">
+            <h4>Petkewich</h4>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="index.html#banner">Home</a>
+            </li>
+            <li>
+                <a href="index.html#portfolio">Portfolio</a>
+            </li>
+            <li>
+                <a href="index.html#about">About</a>
+            </li>
+            <li>
+                <a href="index.html#contact">Contact</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
     <!-- Banner -->
-    <div class="banner">
-        <img src="/Pictures/Assets /Mist.jpeg">
+    <div class="banner" id="banner">
+        <img src="/Pictures/Assets /backgrounds/Mist.jpeg">
         <div class="content">
             <h2>Gabriel Petkewich</h2>
             <p>Full Stack Software Developer</p>
         </div>
     </div>
-    <!-- Projects -->
-    <section class="portfolio">
-        <div class="container">
+
+    <!-- Portfolio -->
+    <section class="portfolio" id="portfolio">
+        <div class="container" style="align-items: center;">
             <div class="heading">
                 <h2>Portfolio</h2>
             </div>
             <div class="row">
                 <div class="card">
-                    <!-- <img src="/Pictures/Projects/fridge/thumbnail.png"></div> !-->
+                    <a href="portfolio-details.html"></a>
+                    <div class="card-header">
+                        <h1>Ab-Inforcer II</h1>
+                    </div>
+                    <div class="card-body">
+                        <p>This software engineering capstone project is still under way, but implements an interactive
+                            app to the existing Ab-Inforcer excercise hardware.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="portfolio-details.html"></a>
                     <div class="card-header">
                         <h1>fridge</h1>
                     </div>
@@ -39,62 +79,96 @@
                     </div>
                 </div>
                 <div class="card">
-                    <!-- <img src="/Pictures/Projects/Theseus/theseus.png"></div> !-->
+                    <a href="portfolio-details.html"></a>
                     <div class="card-header">
                         <h1>Theseus</h1>
                     </div>
                     <div class="card-body">
-                        <p>The first game I ever made, and was also project lead for. Designed in Unity,
+                        <p>The first game I ever made, I was also the project lead for. Designed in Unity,
                             this project took a wide balance of managing, designing, and coding.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="portfolio-details.html"></a>
+                    <div class="card-header">
+                        <h1>GS Zoo</h1>
+                    </div>
+                    <div class="card-body">
+                        <p>This group database project required us to work out a "real" world ecosystem of data many
+                            tables worth of SQL data and build an application to support it.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- About -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="contentBx">
             <div class="about-heading">
                 <h2>About Me</h2>
             </div>
             <div class="about-text">
-                <p>My name is Gabriel Petkewich and I am a Full Stack Software
-                Developer from Statesboro, Georgia. At Southern I've been an active member of 
-                the Aurora Game Development Club and the Association for Computing Machinery (ACM).
-                In December 2020 I will graduate from Georgia Southern University with a Bachelor's Degree in Computer Science.<br><br>
+                <p>My name is Gabriel Petkewich and I am a Full Stack Software Developer from Statesboro, Georgia. 
+                In December 2020 I will graduate from Georgia Southern University with a Bachelor's 
+                Degree in Computer Science. At Southern I've been an active member of the Aurora Game Development 
+                Club and the Association for Computing Machinery (ACM).
+                <br><br>
                 During my time at Georgia Southern, I've worked for almost 3 years at Morris Technology
                 as a Junior Solutions Developer. Here I've added many skills and tools to my personal web development
                 kit: Django, AWS, PSQL, and more! <br><br>
                 Outside of software development I'm a drummer and live music enthusiast. I love cats, my favorite video game is
-                Rocket League, and some of my favorite bands include Polyphia, Hippo Campus, and Weezer.
+                Rocket League, and some of my favorite bands include Polyphia, Hippo Campus, and Weezer. <br><br><br>
                 </p>
+            </div>
+            <div class="resume">
+                <a class="button" href="gabe-resume.docx" download="Gabriel Petkewich Resume">Download Resume</a>
             </div>
         </div>
         <div class="imgBx"></div>
     </section>
-    <!-- Resume -->
+    
     <!-- Contact -->
-    <section class="contact">
+    <section class="contact" id="contact">
+    
         <div class="heading">
             <h2>Contact Me</h2>
         </div>
         <div class="container">
-            <form action="action_page.php">
+            <form action="index.php" method="POST">
           
-              <label for="fname">Full Name</label>
+              <label for="fname" style="color: white">Full Name</label>
               <input type="text" id="fullname" name="fullname" placeholder="Full Name">
           
-              <label for="emailaddress">Email Address</label>
+              <label for="emailaddress" style="color: white">Email Address</label>
               <input type="text" id="emailaddress" name="emailaddress" placeholder="Email Address">
+
+              <label for="subject" style="color: white">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Email Address">
           
-              <label for="response">Subject</label>
-              <textarea id="response" name="response" placeholder="Write your message here." style="height:200px"></textarea>
+              <label for="message" style="color: white">Message</label>
+              <textarea id="message" name="message" placeholder="Write your message here." style="height:200px"></textarea>
           
               <input type="submit" value="Submit">
           
             </form>
         </div> 
     </section>
+
+    <section class="footer">
+        <p class="text">Designed & Developed By Yours Truly</p>
+        <ul>
+            <p>Follow me on : </p>
+            <li><a href="#"><img src="/Pictures/Assets /mdi/icons8-facebook-f-24.png"></a></li>
+            <li><a href="#"><img src="/Pictures/Assets /mdi/icons8-instagram-24.png"></a></li>
+            <li><a href="#"><img src="/Pictures/Assets /mdi/icons8-linkedin-24.png"></a></li>
+        </ul>
+    </section>
+
+    <script src="menu.js"></script>
+    <script src="sticky.js"></script>
+
 </body>
 </html>
