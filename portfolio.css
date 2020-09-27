@@ -53,6 +53,9 @@
     font-size: 18px;
     color: white;
 }
+.card a {
+    text-decoration: none;
+}
 /*.card .card-btn {
     display: block;
     color: #fff;

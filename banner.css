@@ -60,6 +60,9 @@
     .contact {
         padding: 50px;
     }
+    .contact .container{
+        width: 100%;
+    }
     .footer {
         padding: 20px 50px;
         flex-direction: column-reverse;
