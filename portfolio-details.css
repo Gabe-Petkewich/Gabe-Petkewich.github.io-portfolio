@@ -37,7 +37,7 @@
     text-align: left;
     font-size: 18px;
     color: white;
-    width: 65%;
+    width: 50%;
 }
 .card:hover {
     transform: scale(1.05);
