@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel ="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="portfolio-details.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="footer.css">
@@ -20,7 +21,14 @@
                 <a href="index.html#banner">Home</a>
             </li>
             <li>
-                <a href="index.html#portfolio">Portfolio</a>
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="index.html#portfolio">Portfolio</a>
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="portfolio-details.html">Details</a>
+                    </div>
+                </div>
             </li>
             <li>
                 <a href="index.html#about">About</a>
@@ -47,44 +55,65 @@
                     <div class="card-header">
                     </div>
                     <div class="card-body" id="ab-inforcerII">
-                        <h1>Ab-Inforcer II</h1><br><br>
+                        <h1>Ab-Inforcer II</h1><br>
+                        <div class="mdi">
+                            <a href="https://gitlab.com/ab-admirers"><img src="/Pictures/Assets /mdi/gitlab.png"></a>
+                        </div><br><br>
                         <p><b>Description</b></p>
                         <p>This software engineering capstone project is still under way, but implements an interactive
-                            app to the existing Ab-Inforcer excercise hardware.</p><br>
+                            app to the existing Ab-Inforcer excercise hardware. The team is composed of Michael Carter, 
+                            Nicholas Hadley, Atakan Cocen, Jacob Smith, and myself.</p><br>
                         <p><b>Technology</b></p>
+                        <p>Unkown</p>
                     </div>
                 </div>
                 <div class="card" id="fridge">
                     <div class="card-header">
                     </div>
                     <div class="card-body">
-                        <h1>fridge</h1><br><br>
+                        <h1>fridge</h1><br>
+                        <div class="mdi">
+                            <a href="https://gitlab.com/hadley31/fridge"><img src="/Pictures/Assets /mdi/gitlab.png"></a>
+                        </div><br><br>
                         <p><b>Description</b></p>
                         <p>A flutter project that was designed with HCI principles in mind to provide a platform allowing 
-                            users to keep track of items in their fridge using the Spoonacular API.</p><br>
+                            users to keep track of items in their fridge using the Spoonacular API. By tracking expiration dates,
+                            suggesting currently feasible recipes, and storing favorites for next time, fridge was an app built to improve
+                            the quality of life in the kitchen. The team was composed of Nicholas Hadley, Woo Jung, Atakan Cocen, and myself.</p><br>
                         <p><b>Technology</b></p>
+                        <p>Flutter, Dart, Firebase, Ruby</p>
                     </div>
                 </div>
                 <div class="card" id="theseus">
                     <div class="card-header">
                     </div>
                     <div class="card-body">
-                        <h1>Theseus</h1><br><br>
+                        <h1>Theseus</h1><br>
+                        <div class="mdi">
+                            <a href="https://github.com/GabePetkewich/Mino-Game"><img src="/Pictures/Assets /mdi/github.png"></a>
+                        </div><br><br>
                         <p><b>Description</b></p>
                         <p>The first game I ever made, I was also the project lead for. Designed in Unity,
-                            this project took a wide balance of managing, designing, and coding.</p><br>
+                            this project took a wide balance of managing, designing, and coding. The team was quite expansive,
+                            but the main contributors were Brian Cox, Bradley Boswell, LJ Aditya, Andrew Sanders, and myself.</p><br>
                         <p><b>Technology</b></p>
+                        <p>Unity, C#, Blender</p>
                     </div>
                 </div>
                 <div class="card" id="gszoo">
                     <div class="card-header">
                     </div>
                     <div class="card-body">
-                        <h1>GS Zoo</h1><br><br>
+                        <h1>GS Zoo</h1><br>
+                        <div class="mdi">
+                            <a href="https://github.com/Davidah121/Database-Project"><img src="/Pictures/Assets /mdi/github.png"></a>
+                        </div><br><br>
                         <p><b>Description</b></p>
                         <p>This group database project required us to work out a "real" world ecosystem of data many
-                            tables worth of SQL data and build an application to support it.</p><br>
+                            tables worth of SQL data and build an application to support it. The group members were Christopher
+                            Spradlin, Nicholas Hadley, Alan Harris, James Nguyen, and myself.</p><br>
                         <p><b>Technology</b></p>
+                        <p>MySQL, Visual Studio Code, C#</p>
                     </div>
                 </div>
             </div>
