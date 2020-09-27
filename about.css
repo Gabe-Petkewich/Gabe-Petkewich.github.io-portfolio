@@ -43,6 +43,7 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    text-decoration: none;
   }
 .about .button:hover {
     background-color:#a8367a;
