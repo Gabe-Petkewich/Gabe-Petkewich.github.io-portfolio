@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel ="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <script src="email.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="banner.css">
     <link rel="stylesheet" href="contact.css">
@@ -26,7 +27,14 @@
                 <a href="index.html#banner">Home</a>
             </li>
             <li>
-                <a href="index.html#portfolio">Portfolio</a>
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="index.html#portfolio">Portfolio</a>
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="portfolio-details.html">Details</a>
+                    </div>
+                </div>
             </li>
             <li>
                 <a href="index.html#about">About</a>
